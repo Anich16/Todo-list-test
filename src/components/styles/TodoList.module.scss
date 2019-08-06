@@ -1,0 +1,105 @@
+.itemList {
+  width: 100%;
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.done {
+  color: #867e7e;
+  text-decoration: line-through;
+  flex: 1 1 50%;
+  padding: 0 5px;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  height: 32px;
+  width: 32px;
+  outline: 1px solid #ccc;
+  outline-offset: -8px;
+  font-size: 32px;
+  line-height: 32px;
+  cursor: pointer;
+
+  &:after {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.isChecked {
+  font-size: 25px;
+  line-height: 32px;
+  padding-left: 13px;
+}
+
+.title {
+  display: block;
+  flex: 1 50%;
+  padding: 0 5px;
+
+  .is-checked & {
+    color: #ccc;
+    text-decoration: line-through;
+  }
+}
+
+.input {
+  position: relative;
+  width: 80%;
+
+}
+
+.inputTitle {
+  width: 95%;
+  padding: 5px;
+  color: transparent;
+}
+
+.inputBlock {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.backlight {
+  color: #3c803b;
+}
+
+.tagsBlock {
+  display: flex;
+  margin-left: 50px;
+}
+
+.tag {
+  margin: 0 10px 0 0 ;
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: #fff;
+  color: #3c803b;
+  border: 1px solid #3c803b;
+}
+
+.buttonSave {
+  font-size: 18px;
+  padding: 2px 5px;
+}
+
